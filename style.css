@@ -1,0 +1,54 @@
+/* fonts */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+</style>
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+/* -----------------------
+        Header Part 
+--------------------------*/
+.Main{
+    display: flex;
+    height: 677px;
+    background-color: #2D25A0;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+
+}
+.main-info{
+    margin-top: 207px;
+    margin-left: 156px;
+    display: flex;
+    flex-direction: column;
+}
+.header-info{
+    
+    height: 230px;
+    width: 485px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.button{ 
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px; 
+}
+/* a:hover optional nije add korsi */
+a:hover{
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+}
+.banner{
+    margin-top: 135px ;
+    margin-left: 102px;
+    padding: 0px 0px
+}
