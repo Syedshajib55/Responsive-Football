@@ -1,8 +1,12 @@
-/* fonts */
+/* ----------------
+     Fonts Style
+    ---------------  */
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 </style>
-/* common styles or utilities */
+/* ----------------
+  Common Styles or Utilities
+  -----------------  */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
@@ -10,6 +14,9 @@ body{
 /* -----------------------
         Header Part 
 --------------------------*/
+h1{
+    font-size: 64px;
+}
 .Main{
     display: flex;
     height: 677px;
@@ -18,37 +25,80 @@ body{
     width: 100%;
     left: 0px;
     top: 0px;
-
 }
 .main-info{
-    margin-top: 207px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px 24px ;
     margin-left: 156px;
     display: flex;
     flex-direction: column;
 }
 .header-info{
-    
-    height: 230px;
     width: 485px;
+    height: 230px;
     font-weight: 700;
     color: #FFFFFF;
+    margin-top: 100px;
 }
-.button{ 
+.button{
+    width: 180px;
+    color: white;
     text-align: center;
-    font-size: 16px;
-    color: #FFFFFF;
-    background-color: #E02C6D;
     width: 168px;
-    height: 44px; 
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 0;
+    background-color: #E02C6D;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    margin-top: 80px;
+    transition: transform 0.5s;
+}
+.button:hover{
+    transform: translateX(45px);
+    color: hotpink;
+    background-color: tomato;
+    transition: 0.9s;
+}
+.Main > .main-info > .button > a{
+    color: #FFFFFF;
 }
 /* a:hover optional nije add korsi */
-a:hover{
-    color:white;
+.Main > .main-info > .button > a:hover{
+    color:rgb(17, 17, 16);
     text-decoration:none;
-    cursor:pointer;
+    cursor:pointer
 }
 .banner{
     margin-top: 135px ;
     margin-left: 102px;
-    padding: 0px 0px
+    padding: 0px 0px;
+}
+
+/* ------------------------
+       Players Styles
+   ------------------------ */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+.profile-pic img{
+    width: 300px;
+    height: 256px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
 }
